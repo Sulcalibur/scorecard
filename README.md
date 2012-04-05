@@ -31,8 +31,9 @@ example:
   $('#my-cs-badges').scorecard({
     username: 'dmondark',
     sections: ['badges'],
-    loading:
+    loading: {
       message: 'Loading Code School bages...'
+    }
   });
 </script>
 ```

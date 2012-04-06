@@ -16,6 +16,23 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#cs-completed').scorecard({
+          username: 'dmondark',
+          sections: ['completed'],
+        });
+        $('#cs-in-progress').scorecard({
+          username: 'dmondark',
+          sections: ['in-progress'],
+        });
+        $('#cs-badges').scorecard({
+          username: 'dmondark',
+          sections: ['badges'],
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -32,6 +49,7 @@
       <section>
 
 <h2>My Code School Progress</h2>
+<p>Scroll down to <a href="#code">see</a> the html markup, css and javscript code used to generate this section.</a>
 <h3>Completed Courses</h3>
 <div id="cs-completed" class="cs-section group">
   <p>All the courses that I've aced!</p>
@@ -47,21 +65,72 @@
   <p>You can't really get enough of those!</p>
 </div>
 
-<script type="text/javascript">
-  $('#cs-completed').scorecard({
-    username: 'dmondark',
-    sections: ['completed'],
-  });
-  $('#cs-in-progress').scorecard({
-    username: 'dmondark',
-    sections: ['in-progress'],
-  });
-  $('#cs-badges').scorecard({
-    username: 'dmondark',
-    sections: ['badges'],
-  });
-</script>
-
+<hr/>
+<h2 id="code">Markup &amp; Code</h2>
+<h3>HTML:</h3>
+<div class="highlight">
+  <pre><span class="nt">&lt;h2&gt;</span>My Code School Progress<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>Scroll down to <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#code"</span><span class="nt">&gt;</span>see<span class="nt">&lt;/a&gt;</span> the html markup, css and javscript code used to generate this section.<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Completed Courses<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"cs-completed"</span> <span class="na">class=</span><span class="s">"cs-section group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>All the courses that I've aced!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Courses In Progress<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"cs-in-progress"</span> <span class="na">class=</span><span class="s">"cs-section group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Working on them...<span class="nt">&lt;/p&gt;</span> 
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Awarded Badges<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"cs-badges"</span> <span class="na">class=</span><span class="s">"cs-section group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>You can't really get enough of those!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+</div>
+<h3>CSS:</h3>
+<div class="highlight">
+<pre><span class="nc">.cs-section</span> <span class="p">{</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.cs-section</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="k">list-style-type</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.cs-section</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.cs-section</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">border</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.cs-section</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">45px</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.cs-section</span> <span class="nt">img</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">7</span><span class="p">;</span>
+<span class="p">}</span></pre>
+</div>
+<h3>Javascript:</h3>
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'#cs-completed'</span><span class="p">).</span><span class="nx">scorecard</span><span class="p">({</span>
+    <span class="nx">username</span><span class="o">:</span> <span class="s1">'dmondark'</span><span class="p">,</span>
+    <span class="nx">sections</span><span class="o">:</span> <span class="p">[</span><span class="s1">'completed'</span><span class="p">],</span>
+  <span class="p">});</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'#cs-in-progress'</span><span class="p">).</span><span class="nx">scorecard</span><span class="p">({</span>
+    <span class="nx">username</span><span class="o">:</span> <span class="s1">'dmondark'</span><span class="p">,</span>
+    <span class="nx">sections</span><span class="o">:</span> <span class="p">[</span><span class="s1">'in-progress'</span><span class="p">],</span>
+  <span class="p">});</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'#cs-badges'</span><span class="p">).</span><span class="nx">scorecard</span><span class="p">({</span>
+    <span class="nx">username</span><span class="o">:</span> <span class="s1">'dmondark'</span><span class="p">,</span>
+    <span class="nx">sections</span><span class="o">:</span> <span class="p">[</span><span class="s1">'badges'</span><span class="p">],</span>
+  <span class="p">});</span>
+<span class="p">});</span></pre>
+</div>
       </section>
     </div>
     <footer>

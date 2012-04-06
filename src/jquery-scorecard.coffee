@@ -1,5 +1,6 @@
 #  Project: Scorecard
-#  Description: Display your CodeSchool (http://www.codeschool.com/) courses and badges on your site!
+#  Version: 0.1
+#  Description: Display your Code School (http://www.codeschool.com/) courses and badges on your site!
 #  Author: Ali B. (http://awhitebox.com)
 #  License: MIT License (See LICENSE)
 #  Thanks: Code School (http://www.codeschool.com)

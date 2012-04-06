@@ -41,7 +41,7 @@ example:
 
 A hash of options can be passed to scorecards as below:
 
-* `username`: Your code school username (This is required)
+* `username`: Your Code School username (This is required)
 * `sections`: An 1-3 elements array of the sections to be rendered possible
 values are: 'completed', 'in-progress' and/or 'badges' (default: All)
 * `newtab`: Whether clicking on a course/badge will open the link in a new tab
@@ -66,7 +66,7 @@ css selector would look something like:
 ```
 
 ##Thanks
-Many thanks to the good guys at Code School for the help with the API.
+Many thanks to the good guys at [Code School](http://www.codeschool.com) for the help with the API.
 
 Also thanks to Mihail Szabolcs ([@theicebreaker](https://twitter.com/theicebreaker))
 for writing [Proudify](https://github.com/icebreaker/proudify) which was the main
